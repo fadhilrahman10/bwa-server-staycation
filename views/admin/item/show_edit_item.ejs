@@ -51,8 +51,8 @@
         <div class="form-group">
           <label for="category">Category</label>
           <select name="categoryId" id="category" class="form-control">
-            <option value="<%= item.categoryId[0].id %>">
-              ---- <%= item.categoryId[0].name %> ----
+            <option value="<%= item.categoryId._id %>">
+              ---- <%= item.categoryId.name %> ----
             </option>
             <% for( let i = 0; i < category.length; i++ ) { %>
             <option value="<%= category[i].id %>">
